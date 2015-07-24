@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/list_item_avatar_size"
+        android:layout_height="@dimen/list_item_avatar_size"
+        android:src="@drawable/cheese_1"
+        android:layout_marginRight="16dp"/>
+
+
+    <TextView
+        android:id="@+id/source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titre_source_example"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/avatar"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_toEndOf="@+id/avatar" />
+    <TextView
+        android:id="@+id/created_at"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titre_created_at_example"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="?attr/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/source"
+        android:layout_alignStart="@+id/source"
+        android:gravity="right" />
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titre_content_example"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="95dp"
+        android:layout_below="@+id/source"
+        />
+
+
+</RelativeLayout>
